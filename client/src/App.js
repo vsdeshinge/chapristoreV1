@@ -7,12 +7,6 @@ import Shop from './Pages/Shop';
 import LoginSignup from './Pages/LoginSignup';
 import Product from './Pages/Product';
 
-class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {apiResponse:""};
-  }
-}
 
 function App() {
   return (
