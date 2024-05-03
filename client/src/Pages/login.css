@@ -1,0 +1,105 @@
+.login-page-child {
+  position: absolute;
+  top: 192px;
+  left: 251.5px;
+  width: 1728px;
+  height: 119px;
+}
+.group-child,
+.login-page-item {
+  position: absolute;
+  top: 0;
+  background-color: #c5f42c;
+}
+.login-page-item {
+  left: 0;
+  width: 1728px;
+  height: 14px;
+}
+.group-child {
+  right: 0;
+  border-radius: 16px;
+  width: 160px;
+  height: 64px;
+}
+.login {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 350px;
+  right: -329.5px;
+  width: 160px;
+  height: 64px;
+  font-size: 32px;
+  font-family: Raleway;
+}
+.login-page-inner,
+.rectangle-div {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 1731.5px;
+  height: 2px;
+}
+.rectangle-div {
+  top: 630px;
+  left: 1185.23px;
+  border-radius: 12.91px;
+  background-color: #c5f42c;
+  width: 71px;
+  height: 642.23px;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  cursor: pointer;
+}
+.hello {
+  height: 2.39%;
+  width: 3.64%;
+  top: 50.19%;
+  left: 32.92%;
+  color: transparent;
+}
+.div,
+.hello,
+.log-in {
+  position: absolute;
+  display: inline-block;
+}
+.div {
+  height: 1.77%;
+  width: 0.41%;
+  top: 50.44%;
+  left: 32.64%;
+  font-size: 19.36px;
+  color: transparent;
+}
+.log-in {
+  height: 2.39%;
+  top: 58.32%;
+  left: calc(50% - 37px);
+  width: 75px;
+}
+.sign-up {
+  color: #00f;
+}
+.click-here-to-container {
+  position: absolute;
+  top: 712px;
+  left: 959px;
+  font-family: "Source Sans 3";
+  cursor: pointer;
+}
+.login-page {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1118px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 25.82px;
+  color: #000;
+  font-family: Inter;
+}
