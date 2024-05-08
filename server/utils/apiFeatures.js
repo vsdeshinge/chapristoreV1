@@ -15,10 +15,10 @@ class APIFeatures{
         // ^^ loops which delete from queryObj
 
        //01b ) advanced filtering
-       console.log(queryObj);
+       //console.log(queryObj);
        let queryStr = JSON.stringify(queryObj);
        queryStr = queryStr.replace(/\b(gte|gt|lt|lte)\b/g, match=>`$${match}`);
-       console.log(JSON.parse(queryStr));
+       //console.log(JSON.parse(queryStr));
 
        //queryStr = JSON.parse(queryStr); -- can not use to parser for JSON
 

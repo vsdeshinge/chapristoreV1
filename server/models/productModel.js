@@ -4,11 +4,12 @@ const productSchema = new mongoose.Schema({
     
        id:{
         type:Number,
-        required:true
+        required:[true, 'A product must have a id']
        },
 
         name:{
-            type:String
+            type:String,
+            required:[true, 'A product must have a name']
         },
         gender:{
             type:String
@@ -76,8 +77,8 @@ const productSchema = new mongoose.Schema({
     });
 
     productSchema.post(/^find/,function(docs, next){
-        console.log(`Query took ${Date.now() - this.start} milliseconds!`);
-        console.log(docs);
+        // console.log(`Query took ${Date.now() - this.start} milliseconds!`);
+        // console.log(docs);
         next()
     });
 

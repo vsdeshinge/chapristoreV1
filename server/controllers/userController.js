@@ -46,7 +46,7 @@ exports.createUser = (req,res)=>{
   const newId = tours[tours.length-1].id + 1;
   const newTours = Object.assign({id: newId},req.body);
   tours.push(newTours);
-  fs.writeFile(`${__dirname}/dev-data/data/tours-simple.json`,JSON.stringify(tours),err =>{
+  fs.writeFile(`${__dirname}/dev-data/data/users.json`,JSON.stringify(tours),err =>{
       res.status(201).json({
           status: 'success',
           data:{

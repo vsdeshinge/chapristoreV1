@@ -1,5 +1,6 @@
 const Product = require('./../models/productModel')
 const APIFeatures = require('./../utils/apiFeatures')
+const catchAsync = require('./../utils/catchAsync')
 
 
 exports.getAllProducts =async (req, res) =>{
@@ -28,7 +29,7 @@ exports.getAllProducts =async (req, res) =>{
         res.status(404).json({
             status:'fail'
         })
-        console.log(err);
+        //console.log(err);
     }
     
 };
@@ -64,25 +65,18 @@ exports.getProduct = async(req, res) =>{
 
 
 
-
-
-exports.createProduct= async(req,res)=>{
-    try{
-        const newProduct= await Pr.create(req.body);
+exports.createProduct= catchAsync(async(req, res, next)=>{
+    
+        const newProduct= await Product.create(req.body);
         res.status(201).json({
             status: 'success',
             data:{
                 product: newProduct
             }
         });
-    }catch(err){
-        res.status(400).json({
-            status: 'fail',
-            message: err
-        })
-    }
+    
 
-}
+});
 
 
 

@@ -25,10 +25,11 @@ app.all('*',(req,res, next)=>{
     //     message: `cant find ${req.originalUrl} on this server!`
     // })
 
-    // const err = new Error(`can't find ${req.originalUrl} on this server`);
-    // err.status = 'fail';
-    // err.status = 400;
-    next(AppError.AppError());
+    const err = new Error(`can't find ${req.originalUrl} on this server`);
+    err.status = 'fail';
+    err.status = 400;
+    next(err)
+    //next(AppError.AppError());
 });
 
 app.use(erroController);
