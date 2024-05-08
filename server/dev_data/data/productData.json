@@ -1,0 +1,349 @@
+[
+    {
+        "id":1,
+        "name":"AINT NO REST BLACK OVERSIZED T-SHIRT",
+        
+            "gender":"male",
+            "category":"t shirt",
+            "sizes":["S","M","L"],
+            "color":"black",
+            "fit":"oversized",
+            "sleeve":"half sleeves",
+            "ratings":4,
+            "design":"Graphic print",
+            "fabric":"Cotton",
+            "neck":"crew neck",
+            "description":"Off Shoulder Crew Neck Graphic Print Front Embroidery Comfort Stretch Model is wearing a size M Model Height: 6 Feet",
+            "img":["MBT_0001-1.jpg","im"],
+            "price": 100,
+        
+        "uploadedDate":"2022-05-12"
+    },
+
+
+    {
+        "id":2,
+        "name":"MINIMALIST ELEGANCE MAROON SHIRT",
+        
+            
+            "gender":"male",
+            "category":"shirt",
+            "sizes":["S","M","L"],
+            "color":"brown",
+            "fit":"slim fit",
+            "sleeve":"full sleeves",
+            "ratings":4.5,
+            "design":"Curved Hem",
+            "fabric":"Cotton",
+            "neck":"collared",
+            "description":"Elevate your Casual attire with our Minimalist Elegance Maroon Shirt. Made from high-quality fabric, this shirt features a sophisticated and classic solid color design for a professional look. Perfect for Casual occasions, this shirt is a must-have for any wardrobe",
+            "img":["MBS_0002-1.jpg","im"],
+            "price": 200,
+        
+        "uploadedDate":"2022-06-22"
+    },
+
+    {
+        "id":3,
+        "name":"BOLD SQUARE CREAM SHIRT",
+        
+            
+            "gender":"male",
+            "category":"shirt",
+            "sizes":["S","M","L"],
+            "color":"cream",
+            "fit":"slim fit",
+            "sleeve":"full sleeves",
+            "ratings":4.2,
+            "design":"Curved Hem",
+            "fabric":"Polyster",
+            "neck":"spread collar",
+            "description":"Expertly designed for a sleek and modern look, our Bold Square Cream Shirt features a self design pattern and a slim fit cut. Upgrade your wardrobe with this stylish and sophisticated shirt, perfect for any occasion",
+            "img":["MCS_0003-1.jpg","im"],
+            "price": 300,
+        
+        "uploadedDate":"2022-7-25"
+    },
+
+    {
+        "id":4,
+        "name":"URBAN CORD NAVY CORDUROY CARGO PANT",
+        
+            
+            "gender":"male",
+            "category":"cargo pant",
+            "sizes":["30","32","34","36"],
+            "color":"navy",
+            "fit":"relaxed fit",
+            "pockets":"side pockets",
+            "ratings":4.3,
+            "design":"plain",
+            "fabric":"Corduroy",
+            "description":"Take your streetwear game to the next level with our Urban Cord Navy Corduroy Cargo Pant. These pants are perfect for any casual outing, adding a touch of style and edge to your look. Step out of your comfort zone and embrace the bold and adventurous spirit of streetwear fashion!",
+            "img":["MNP_0004-1.jpg","im"],
+            "price": 400,
+        
+        "uploadedDate":"2022-08-15"
+    },
+
+    {
+        "id":5,
+        "name":"GLINTER MAUVE HOODIE",
+        
+            
+            "gender":"male",
+            "category":"hoodie",
+            "sizes":["S","M","L"],
+            "color":"glinter mauve",
+            "fit":"slim fit",
+            "sleeve":"full sleeves",
+            "ratings":4.6,
+            "design":"plain",
+            "fabric":"Cotton Fleeced",
+            "description":"Hoodie with Drawstring Full Sleeve Front Pocket Model is wearing a size M",
+            "img":["MGH_0005-1.jpg","im"],
+            "price": 500,
+        
+        "uploadedDate":"2022-09-29"
+    },
+
+    {
+        "id":6,
+        "name":"SNUG GREEN SWEATER",
+        
+            
+            "gender":"male",
+            "category":"sweat shirt",
+            "sizes":["S","M","L"],
+            "color":"black",
+            "fit":"slim fit",
+            "sleeve":"long sleeves",
+            "ratings":4.7,
+            "design":"knitted",
+            "fabric":"Cotton",
+            "neck":"crew neck",
+            "description":"Long Sleeves Crew Rib-Knit Blend Knitted Design Model is wearing a size M",
+            "img":["MGS_0006-1.jpg","im"],
+            "price": 600,
+
+        "uploadedDate":"2022-10-15"
+    },
+
+    {
+        "id":7,
+        "name":"STREAMLINED BLACK SHORTS",
+        
+            
+            "gender":"male",
+            "category":"shorts",
+            "sizes":["30","32","34","36"],
+            "color":"black",
+            "fit":"slim fit",
+            "pockets":"side pockets",
+            "ratings":4.2,
+            "design":"Solid",
+            "fabric":"Cotton",
+            "description":"These Streamlined Black Shorts are made with lightweight, breathable cotton for a comfortable fit. With a slim fit design, they provide a stylish and flattering look. Perfect for any casual occasion, these shorts offer both comfort and fashion at a great value",
+            "img":["MBS_0007-1.jpg","im"],
+            "price": 700,
+        
+        "uploadedDate":"2022-11-04"
+    },
+
+    {
+        "id":8,
+        "name":"MAVEN LIGHT GREY CHINO",
+        
+            
+            "gender":"male",
+            "category":"chino pant",
+            "sizes":["30","32","34","36"],
+            "color":"light grey",
+            "fit":"ankle fit",
+            "pockets":"side pockets",
+            "ratings":4.4,
+            "design":"Solid",
+            "fabric":"Cotton poly lycra",
+            "description":"Get ready to turn heads in the Maven Trout Grey Chino. The slimfit design will give you a sleek and stylish look for any formal occasion. Don't just fit in, stand out with these trousers. Perfect for those who want to make a statement without taking themselves too seriously!",
+            "img":["MGP_0008-1.jpg","im"],
+            "price": 800,
+        
+        "uploadedDate":"2022-12-31"
+    },
+
+    {
+        "id":9,
+        "name":"CORECOMFORT PINK T-SHIRT",
+        
+            
+            "gender":"male",
+            "category":"t shirt",
+            "sizes":["S","M","L"],
+            "color":"pink",
+            "fit":"relaxed fit",
+            "sleeve":"half sleeves",
+            "ratings":4.3,
+            "design":"basic",
+            "fabric":"Cotton",
+            "neck":"crew neck",
+            "description":"Indulge in the ultimate comfort with our CoreComfort Pink T-Shirt. Designed with advanced comfort stretch technology, this t-shirt allows for maximum mobility and flexibility. Experience a new level of comfort and ease in your everyday wear",
+            "img":["MPT_0009-1.jpg","im"],
+            "price": 900,
+        
+        "uploadedDate":"2023-01-02"
+    },
+
+    {
+        "id":10,
+        "name":"JEZZI TEAL GREEN CORDUROY OVERSHIRT",
+        
+            
+            "gender":"male",
+            "category":"shirt",
+            "sizes":["S","M","L"],
+            "color":"teal green",
+            "fit":"slim fit",
+            "sleeve":"full sleeves",
+            "ratings":4.7,
+            "design":"Straight Hem",
+            "fabric":"Polyster",
+            "neck":"Spread Collar",
+            "description":"This street style piece has a modern and classy look to it, perfect for any occasion. Front Double Pocket Snap Buttons  Model is wearing a M size ",
+            "img":["MGS_0010-1.jpg","im"],
+            "price": 1000,
+        
+        "uploadedDate":"2023-02-21"
+    },
+
+    {
+        "id":11,
+        "name":"Women Casual Cat Print Short T-Shirt",
+        
+            
+            "gender":"female",
+            "category":"t shirt",
+            "sizes":["S","M","L"],
+            "color":"blue",
+            "fit":"loose fit",
+            "sleeve":"half sleeves",
+            "ratings":4.2,
+            "design":"printed",
+            "fabric":"Cotton linen",
+            "neck":"o neck",
+            "description":"Gender:Womens Heavy Shirts for Women Oversized Shirt Women Cotton Long Tees Women Color Long Sleeve Tops Button down Blouse V Neck Shirt Juniors plus Size Brand Chain Print Shirt Tight Long Sleeve Shirts Workout Women Western Shirts Classic Fit Long Sleeve Top Womens Dresses Comfort Short Sleeve Women Deep V Sweaters Women Dress Blouse for Women Elegant Women S Shirts Three Quarter Sleeves Teen Summer",
+            "img":["FBT_0011-1.jpg","im"],
+            "price": 1100,
+        
+        "uploadedDate":"2023-03-17"
+    },
+
+    {
+        "id":12,
+        "name":"Angoori Fashion Women's Maroon Maxi Dress",
+        
+            "gender":"female",
+            "category":"maxi dress",
+            "sizes":["S","M","L"],
+            "color":"maroon",
+            "fit":"oversized",
+            "sleeve":"half sleeves",
+            "ratings":4.2,
+            "design":"floral",
+            "fabric":"Cotton",
+            "neck":"Mandarin Neck",
+            "description":"Fabric : Crape , very soft and comfortable dress.Fit Type: Fit and Flare, This is true to size.STYLE: This dress defines the entire body type, also this girls dress is really versatile,Fit Type: Fitted; It's a super breathable Crape fabric dress., light weight, collared neck long maxi dress.Care Instructions: Hand and Machine wash",
+            "img":["FMM_0012-1.jpg","im"],
+            "price": 1200,
+       
+        "uploadedDate":"2023-04-20"
+    },
+
+    {
+        "id":13,
+        "name":"Checks V-Neck Top",
+        
+            
+            "gender":"female",
+            "category":"Women's Tops",
+            "sizes":["S","M","L"],
+            "color":"white-black",
+            "fit":"relaxed fit",
+            "sleeve":"half sleeves",
+            "ratings":4.1,
+            "design":"Checkered",
+            "fabric":"Cotton",
+            "neck":"v-neck",
+            "description":"Machine wash 100% coton Relaxed Fit",
+            "img":["FBC_0013-1.jpg","im"],
+            "price": 1300,
+        
+        "uploadedDate":"2023-05-08"
+    },
+
+    {
+        "id":14,
+        "name":"Women Casual Dress",
+        
+            
+        "gender":"female",
+        "category":"t shirt",
+        "sizes":["S","M","L"],
+        "color":"pink",
+        "fit":"oversized",
+        "sleeve":"half sleeves",
+        "ratings":4,
+        "design":"printed",
+        "fabric":"Cotton",
+        "neck":"crew neck",
+        "description":"looking for some awesome collection of dresses? well, lay your hands on  this dress from ethnic house and also get the option of choosing from pink colour.dress up in a soothing pattern and don this dress made of rayon material.",
+        "img":["FPC_0014-1.jpg","im"],
+        "price": 1400,
+        
+        "uploadedDate":"2023-06-16"
+    },
+
+    {
+        "id":15,
+        "name":"Navy Blue Sweetheart Neck Ruched Front Dress Dress for Women",
+        
+
+        "gender":"FEmale",
+        "category":"t shirt",
+        "sizes":["S","M","L"],
+        "color":"navy-blue",
+        "fit":"regular fit",
+        "sleeve":"half sleeves",
+        "ratings":4.4,
+        "design":"plain",
+        "fabric":"  95% Polyester,5% Elastane",
+        "neck":"Sweetheart",
+        "description":"Style: Elegant, Pattern Type,Details: Wrap,Zipper,: Plain,Sleeve Type: Regular Sleeve,Waist Line: High Waist,Care Instructions: Hand wash,do not dry clean",
+        "img":["FNC_0015-1.jpg","im"],
+        "price": 1500,
+        
+        "uploadedDate":"2023-07-02"
+    },
+
+    {
+        "id":16,
+        "name":"Kurta Set for Women",
+        
+
+        "gender":"female",
+        "category":"kurta",
+        "sizes":["S","M","L"],
+        "color":"black-white",
+        "fit":"oversized",
+        "sleeve":"Three-Quarter Sleeves",
+        "ratings":4.3,
+        "design":"printed",
+        "fabric":"Polyester",
+        "neck":"Collared Neck",
+        "description":"Printed Top , Collared Neck Belted Pleated Dress, in Polyster fabric, Polyester Lining , Fit And Flare, Elastic On Waist, Hemline and features Pleated Skirt with PU Belt On Waist",
+        "img":["FBK_0016-1.jpg","im"],
+        "price": 1600,
+        
+        "uploadedDate":"2023-08-18"
+    }
+
+]
