@@ -8,18 +8,24 @@ const erroController = require('./controllers/errorController')
 const Product = require('./models/productModel')
 const productRouter =require('./routes/productRoutes')
 const userRouter =require('./routes/userRoutes')
+const loginSignUpRouter = require("./routes/loginSignUpRouter")
 
 
 
 const app = express();
 app.use(express.json());
+app.use(express.static('public'));
 
 
 
 
+
+
+
+app.use('/',loginSignUpRouter);
 app.use('/api/v1/products',productRouter);
 app.use('/api/v1/users',userRouter);
-app.use('/',loginSignUpRouter);
+
 app.all('*',(req,res, next)=>{
     // res.sendStatus(404).json({
     //     status: fail,
@@ -34,5 +40,7 @@ app.all('*',(req,res, next)=>{
 });
 
 app.use(erroController);
+
+
 
 module.exports = app;

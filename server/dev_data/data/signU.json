@@ -1,0 +1,128 @@
+[{
+  
+  "fistname": "hi",
+  "username": "hello",
+  "mobilenumber": "123",
+  "email": "shreetech@gmail.com",
+  "password": "123"
+},
+{
+  
+  "fistname": "shrinivas",
+  "username": "shrirg",
+  "mobilenumber": "9591389862",
+  "email": "shrirg@gmail.com",
+  "password": "12345"
+},
+{
+  
+  "firstname": null,
+  "username": "hello",
+  "mobilenumber": "12345",
+  "email": "shree@gmail.com",
+  "password": "123"
+},
+{
+  
+  "firstname": null,
+  "username": "hello",
+  "mobilenumber": "123456",
+  "email": "a@gm",
+  "password": "123"
+},
+{
+  
+  "firstname": "Vivekanand",
+  "username": "maharshi",
+  "mobilenumber": "6361588219",
+  "email": "shreetech5463@gmail.com",
+  "password": "123"
+},
+{
+  
+  "firstname": "prajwal",
+  "username": "prajwal",
+  "mobilenumber": "9902192071",
+  "email": "qwer@gmail.com",
+  "password": "hiremath"
+},
+{
+  
+  "firstname": "shrini",
+  "username": "shrirg7",
+  "mobilenumber": "9591389862",
+  "email": "shrirg777@gmail.com",
+  "password": "890"
+},
+{
+ 
+  "firstname": "Ganesh",
+  "username": "gani",
+  "mobilenumber": "1234567890",
+  "email": "123@gmail.com",
+  "password": "123456789"
+},
+{
+  
+  "firstname": "shrinivas",
+  "username": "shrirg",
+  "mobilenumber": "9591389862",
+  "email": "shrirg777@gmail.com",
+  "password": "1234"
+},
+{
+  
+  "firstname": "rutika",
+  "username": "ru",
+  "mobilenumber": "2123",
+  "email": "hi@gmail.com",
+  "password": "123"
+},
+{
+  
+  "firstname": "ganesh",
+  "username": "ganya",
+  "mobilenumber": "6363245799",
+  "email": "ganesh@gmail.com",
+  "password": "5623"
+},
+{
+  
+  "firstname": "revanth anvekar",
+  "username": "rev",
+  "mobilenumber": "123",
+  "email": "s@g.com",
+  "password": "12345"
+},
+{
+  
+  "firstname": "revanth anvekar",
+  "username": "REVS",
+  "mobilenumber": "123",
+  "email": "D2gmau@g.com",
+  "password": "1234"
+},
+{
+  
+  "firstname": "shrini",
+  "username": "Maharshivivekanand",
+  "mobilenumber": "67688687",
+  "email": "hi@gmail.com",
+  "password": "hello"
+},
+{
+  
+  "firstname": "maharhsi",
+  "username": "maharshi",
+  "mobilenumber": "6361588219",
+  "email": "shreetech5463@gmail.com",
+  "password": "1234"
+},
+{
+  
+  "firstname": "maharhsi",
+  "username": "m",
+  "mobilenumber": "6361588219",
+  "email": "shreetech5463@gmail.com",
+  "password": "1234"
+}]

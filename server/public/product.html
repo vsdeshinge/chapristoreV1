@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Product Page</title>
+</head>
+<body>
+   
+    <button type="button" onclick="searchProducts('male')">Men</button>
+    
+
+
+    <button type="button" onclick="searchProducts('female')">Female</button>
+    
+
+    <button type="button" onclick="searchProducts('unisex')">Unisex</button>
+    <div id="results"></div>
+
+    <div class="product-container" id="productContainer"></div>
+    <script>
+        
+        // all product display
+            document.addEventListener('DOMContentLoaded', function () {
+            // Fetch product data from the server
+            fetch('/api/products')
+                .then(response => response.json())
+                .then(products => displayProducts(products))
+                .catch(error => console.error('Error:', error));
+
+            function displayProducts(products) {
+                const productContainer = document.getElementById('productContainer');
+
+                products.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.innerHTML=`
+                    <img src= "images/${product.images}" width="100px" onClick="showProductDescription(${product.images})"/>
+                    <h2> ${product.title}</h2>
+                    <p>price: ${product.price}</p>`
+                    
+                    
+        
+                    productContainer.appendChild(productDiv);
+                });
+
+
+           
+            }
+           
+               
+
+            // Function to simulate adding to cart
+            window.addToCart = function (productId) {
+                alert(`Product ${productId} added to cart!`);
+            };
+
+
+
+
+        });
+
+        function searchProducts(gender) {
+            //const searchInput = document.getElementById('searchInput');
+            const query = gender;
+
+
+            fetch(`/search?q=${query}`)
+                .then(response => response.json())
+                .then(results => displayResults(results))
+                .catch(error => console.error('Error:', error));
+        }
+
+        function displayResults(results) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+
+            
+            results.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.classList.add('product');
+                    productDiv.innerHTML=`
+                    
+                    <img src= "images/${product.images}" width="100px"/>
+                    <h5> ${product.title}</h5>
+                    <p>price: ${product.price}</p>`
+                    
+                    
+        
+                    resultsDiv.appendChild(productDiv);
+            });
+
+
+
+            
+        }
+
+        function showProductDescription(image) {
+            //const searchInput = document.getElementById('searchInput');
+            const query = image;
+
+
+            fetch(`/product/description?q=${query}`)
+                .then(response => response.json())
+                .then(results => displayResults(results))
+                .catch(error => console.error('Error:', error));
+        }
+
+    </script>
+</body>
+</html>
