@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const morgan = require('morgan');
+const cors = require('cors');
 const AppError = require('./utils/appError');
 const erroController = require('./controllers/errorController')
 
@@ -15,6 +16,7 @@ const loginSignUpRouter = require("./routes/loginSignUpRouter")
 const app = express();
 app.use(express.json());
 app.use(express.static('public'));
+app.use(cors());
 
 
 
