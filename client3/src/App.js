@@ -1,20 +1,36 @@
-// import './App.css'
-import Home from "./components/Home"
-import Login from "./components/Login"
-import Signup from "./components/Signup"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+
+import './App.css';
+import Navbar from './Components/NavBar/Navbar';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import ShopCatogery from './Pages/ShopCatogery';
+import Shop from './Pages/Shop';
+import Footer from './Components/Footer/footer';
+import Product from './Pages/Product';
+import LoginP from './Pages/LoginP';
+import mens_banner from './Components/Assets/banner_mens.png'
+import women_banner from './Components/Assets/banner_women.png'
+import kids_banner from './Components/Assets/banner_kids.png'
+
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/signup" element={<Signup/>}/>
-          <Route path="/home" element={<Home/>}/>
-        </Routes>
-      </Router>
+    <div >
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Shop/>}/>
+        <Route path='/mens' element={<ShopCatogery banner={mens_banner} categogry ="mens"/>}/>
+        <Route path='/Womens' element={<ShopCatogery banner={women_banner} categogry ="Womens"/>}/>
+        <Route path='/Mobilecovers' element={<ShopCatogery banner={kids_banner} categogry ="Mobilecovers"/>}/>
+        <Route path='/Sunglasses' element={<ShopCatogery banner={kids_banner} categogry ="Sunglasses  "/>}/>
+        <Route path='/product' element={<Product/>}>
+          <Route path=':productId' element={<Product/>}/>
+       </Route>
+       <Route path='/cart' element={<cart/>}/>
+       <Route path='/login' element={<LoginP/>}/>
+      </Routes>
+      <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
