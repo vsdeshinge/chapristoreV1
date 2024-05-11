@@ -3,8 +3,8 @@ const APIFeatures = require('./../utils/apiFeatures')
 const catchAsync = require('./../utils/catchAsync')
 
 
-exports.getAllProducts =async (req, res) =>{
-    try{
+exports.getAllProducts = catchAsync(async (req, res, next) =>{
+    
          
 
          //EXECUTE QUERY WITH CLASS
@@ -25,22 +25,21 @@ exports.getAllProducts =async (req, res) =>{
         }
     })
 
-    }catch(err){
-        res.status(404).json({
-            status:'fail'
-        })
-        //console.log(err);
-    }
     
-};
+    
+});
 
-exports.getProduct = async(req, res) =>{
+exports.getProduct = catchAsync(async(req, res, next) =>{
     
-    try{
+    
+        const id = req.params.id*1;
         
-        const product = await Product.find({id: `${req.params.id}`});
+    const product = await Product.find({id: id});
          //Tour.findOne({_id:req.param.id}) both are similar way
-    
+
+        if (product.length === 0) {
+            throw new Error('Product not found');
+    }
   
     res.status(200).json({
         status: 'success',
@@ -48,18 +47,18 @@ exports.getProduct = async(req, res) =>{
             product
         }
         
-    });
+    })
 
-    }catch(err){
-        res.send(404).json({
-            status:'fail',
-            message:'invalid id'
-        })
-    }
+    // }catch(err){
+    //     res.status(404).json({
+    //         status:'fail',
+    //         message:"invalid id"
+    //     })
+    // }
 
     
 
-};
+});
 
 
 
@@ -80,9 +79,9 @@ exports.createProduct= catchAsync(async(req, res, next)=>{
 
 
 
-exports.updateProduct= async(req,res )=>{
+exports.updateProduct= catchAsync(async(req,res, next )=>{
 
-    try{
+    
 
         const product = await Product.findByIdAndUpdate(req.params.id,req.body,{
             new : true,
@@ -95,27 +94,17 @@ exports.updateProduct= async(req,res )=>{
             }
         
         });
-    }catch(err){
-        res.send(404).json({
-            status:'fail',
-            message:err
-        })
-    }
+    
 
-};
+});
 
-exports.deleteProduct = async (req, res) => {
-    try {
+exports.deleteProduct = catchAsync(async (req, res, next) => {
+    
         console.log(req.params.id);
         await Product.findByIdAndDelete(req.params.id);
         res.Status(204).json({
             status: 'success',
             data: null
         });
-    } catch (err) {
-        res.sendStatus(404).json({
-            status: 'fail',
-            message: err
-        });
-    }
-};
+    
+});

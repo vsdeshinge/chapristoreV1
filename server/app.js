@@ -22,24 +22,22 @@ app.use(cors());
 
 
 
-
-
 app.use('/',loginSignUpRouter);
 app.use('/api/v1/products',productRouter);
 app.use('/api/v1/users',userRouter);
 
-app.all('*',(req,res, next)=>{
-    // res.sendStatus(404).json({
-    //     status: fail,
-    //     message: `cant find ${req.originalUrl} on this server!`
+app.all('*',(req, res, next)=>{
+    // res.status(404).json({
+    //     status: "fail",
+    //     message: `cant find ${req.originalUrl} on this server`
     // })
 
-    const err = new Error(`can't find ${req.originalUrl} on this server`);
-    err.status = 'fail';
-    err.status = 400;
-    next(err)
-    //next(AppError.AppError());
+    // const err = new Error(`Cant find ${req.originalUrl} on this server`);
+    // err.status='fail';
+    // err.statusCode = 404;
+    next(new AppError(`Cant find ${req.originalUrl} on this server`, 404));
 });
+
 
 app.use(erroController);
 

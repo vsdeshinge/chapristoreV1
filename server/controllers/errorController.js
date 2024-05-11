@@ -1,12 +1,9 @@
 module.exports = (err, req, res, next)=>{
-
-    //console.error(err.stack);
-    err.statuscode = err.statuscode || 500;
-    err.status = err.status || 'error';
-
-    res.sendStatus(err.statuscode).json({
-        status:'fail',
-        message:err.status
+    err.statusCode = err.statusCode || 500;
+    // 500 is internal sever error
+    err.status = err.status || 'error'
+    res.status(err.statusCode).json({
+        status: err.status,
+        message: err.message
     });
-
-};
+}

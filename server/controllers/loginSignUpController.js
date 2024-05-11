@@ -65,3 +65,16 @@ exports.getlogin = catchAsynch(
         });
     //next();
  });
+
+
+
+ exports.men = async(req, res, next)=>{
+   console.log("hello from men");
+   next();
+ }
+
+
+ exports.men2 = async(req, res, next)=>{
+   console.log("hello from men2");
+   next();
+ }

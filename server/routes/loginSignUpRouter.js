@@ -15,4 +15,10 @@ router
     .post(loginSignUpController.getSignUp);
 
 
+router
+    .route('/men')
+    .get(loginSignUpController.men)
+    .post(loginSignUpController.men2)
+
+
 module.exports = router
