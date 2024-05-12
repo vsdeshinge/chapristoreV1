@@ -8,6 +8,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import PriceSection from "./PriceSection";
 import useAuth from "../hooks/useAuth";
+import './footer.css'
 
 const ProductCard: FC<Product> = ({
   id,
@@ -63,15 +64,17 @@ const ProductCard: FC<Product> = ({
         {discountPercentage && (
           <PriceSection discountPercentage={discountPercentage} price={price} />
         )}
+        <div className="bttn">
         <button
           type="button"
-          className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
+          // className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
           onClick={addCart}
           data-test="add-cart-btn"
-        >
-          <AiOutlineShoppingCart />
-          <span>ADD TO CART</span>
+        ><span>ADD TO CART</span>
+          {/* <AiOutlineShoppingCart /> */}
+          
         </button>
+        </div>
       </div>
     </div>
   );
