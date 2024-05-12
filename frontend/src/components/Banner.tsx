@@ -9,7 +9,7 @@ const Banner: FC = () => (
       <h2 className="text-3xl font-semibold mb-4">Grab it now</h2>
       <Link
         to="/product/4"
-        className="inline-block bg-white rounded-md px-6 py-3 hover:bg-blue-500 hover:text-white"
+        className="inline-block bg-white rounded-md px-6 py-3 hover:bg-[#C5F42C] hover:text-white"
         data-test="banner-btn"
       >
         Shop Now

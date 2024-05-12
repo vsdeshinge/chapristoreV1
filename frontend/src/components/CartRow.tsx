@@ -32,7 +32,7 @@ const CartRow: FC<CartItem> = ({
       <div className="col-span-3">
         <h3 className="font-bold leading-4">{title}</h3>
         <div className="flex space-x-2 items-center">
-          <h3 className="font-semibold">${result.toFixed(2)}</h3>
+          <h3 className="font-semibold">₹{result.toFixed(2)}</h3>
           {discountPercentage !== 0 && (
             <span className="text-xs">-{discountPercentage}%</span>
           )}
@@ -67,7 +67,7 @@ const CartRow: FC<CartItem> = ({
       <div className="font-bold col-span-2">
         {quantity && (
           <span data-test="cart-item-price">
-            ${(result * quantity).toFixed(2)}
+            ₹{(result * quantity).toFixed(2)}
           </span>
         )}
         <RiDeleteBin6Line

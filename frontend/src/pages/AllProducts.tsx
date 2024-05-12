@@ -81,8 +81,8 @@ const AllProducts: FC = () => {
             {allCategories.map((_category) => (
               <div
                 key={_category}
-                className={`cursor-pointer hover:text-blue-500 ${
-                  _category === category ? "text-blue-500" : ""
+                className={`cursor-pointer hover:text-[#C5F42C] ${
+                  _category === category ? "text-[#C5F42C]" : ""
                 }`}
                 onClick={() => {
                   setCategory(_category);

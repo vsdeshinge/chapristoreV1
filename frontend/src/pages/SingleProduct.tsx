@@ -29,7 +29,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchProductDetails = () => {
-      fetch(`https://dummyjson.com/products/${productID}`)
+      fetch(`https://dummyjson.com/products/₹{productID}`)
         .then((res) => res.json())
         .then((data) => {
           const { thumbnail, images, category } = data;
@@ -44,7 +44,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchPreferences = (cat: string) => {
-      fetch(`https://dummyjson.com/products/category/${cat}`)
+      fetch(`https://dummyjson.com/products/category/₹{cat}`)
         .then((res) => res.json())
         .then((data) => {
           const _products: Product[] = data.products;
@@ -118,7 +118,7 @@ const SingleProduct: FC = () => {
                   src={_img}
                   key={_img}
                   alt="thumb"
-                  className={`w-12 cursor-pointer hover:border-2 hover:border-black ${
+                  className={`w-12 cursor-pointer hover:border-2 hover:border-black ₹{
                     _img === selectedImg ? "border-2 border-black" : ""
                   }`}
                   onClick={() => setSelectedImg(_img)}
@@ -162,7 +162,7 @@ const SingleProduct: FC = () => {
           <div className="flex flex-wrap items-center mt-4 mb-2 space-x-2">
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 hover:bg-pink-700 text-white p-2 rounded bg-pink-500"
+              className="flex items-center space-x-1 mb-2 hover:bg-graytext-white p-2 rounded bg-[#C5F42C]"
               onClick={addCart}
             >
               <AiOutlineShoppingCart />
@@ -170,7 +170,7 @@ const SingleProduct: FC = () => {
             </button>
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 bg-blue-500 text-white p-2 rounded hover:bg-blue-700"
+              className="flex items-center space-x-1 mb-2 bg-pink-500 text-white p-2 rounded hover:bg-blue-700"
               onClick={buyNow}
             >
               <FaHandHoldingDollar />
@@ -178,7 +178,7 @@ const SingleProduct: FC = () => {
             </button>
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 bg-yellow-500 text-white p-2 rounded hover:bg-yellow-700"
+              className="flex items-center space-x-1 mb-2 bg-black text-white p-2 rounded hover:bg-yellow-700"
               onClick={addWishlist}
             >
               <MdFavoriteBorder />

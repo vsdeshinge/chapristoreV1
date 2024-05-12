@@ -81,13 +81,13 @@ const Cart: FC = () => {
               <>
                 <div className="flex items-center justify-between p-2">
                   <h2 className="font-bold text-2xl">Total</h2>
-                  <h2 className="font-bold text-2xl">${calculateTotal()}</h2>
+                  <h2 className="font-bold text-2xl">₹{calculateTotal()}</h2>
                 </div>
                 <button
                   type="button"
                   data-test="checkout-btn"
                   onClick={() => setCheckout(true)}
-                  className="w-full text-center text-white bg-blue-500 py-2 my-4 rounded font-bold text-xl hover:bg-blue-700"
+                  className="w-full text-center text-black bg-[#C5F42C] py-2 my-4 rounded font-bold text-xl hover:bg-blue-700"
                 >
                   CHECKOUT
                 </button>

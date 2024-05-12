@@ -67,7 +67,7 @@ const ProductCard: FC<Product> = ({
         <div className="bttn">
         <button
           type="button"
-          // className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
+          //className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
           onClick={addCart}
           data-test="add-cart-btn"
         ><span>ADD TO CART</span>
