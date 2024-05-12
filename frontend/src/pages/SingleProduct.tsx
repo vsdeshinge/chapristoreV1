@@ -29,7 +29,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchProductDetails = () => {
-      fetch(`https://dummyjson.com/products/₹{productID}`)
+      fetch(`https://dummyjson.com/products/${productID}`)
         .then((res) => res.json())
         .then((data) => {
           const { thumbnail, images, category } = data;
@@ -44,7 +44,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchPreferences = (cat: string) => {
-      fetch(`https://dummyjson.com/products/category/₹{cat}`)
+      fetch(`https://dummyjson.com/products/category/${cat}`)
         .then((res) => res.json())
         .then((data) => {
           const _products: Product[] = data.products;

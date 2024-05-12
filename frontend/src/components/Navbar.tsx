@@ -44,12 +44,12 @@ const Navbar: FC = () => {
             </div>
           </div>
 
-          <div className="flex gap-4 md:gap-8 items-center">
+          <div className="flex gap-4 md:gap-8 items-center ">
 
 
           <Link
               to="/products"
-              className="text-xl font-bold"
+              className="text-xl font-bold "
               data-test="main-products"
             >
               men
