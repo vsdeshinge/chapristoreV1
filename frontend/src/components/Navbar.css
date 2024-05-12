@@ -7,18 +7,18 @@
     display: flex;
     /* align-items: center; */
     text-align: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .login-button{
     width: 100px;
     height: 52px;
     outline: none;
-    border: 1px solid #7a7a7a;
+    border: 0px solid #7a7a7a;
     border-radius: 15px;
     color:#080808;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     background: #C5F42C;
     
 }

@@ -37,13 +37,49 @@ const Navbar: FC = () => {
             <input
               type="text"
               placeholder="Search for a product..."
-              className="border-2 border-blue-500 px-6 py-2 w-full"
+              className="border-2 border-[#C5F42C] px-6 py-2 w-full"
             />
-            <div className="bg-blue-500 text-white text-[26px] grid place-items-center px-4">
+            <div className="bg-[#C5F42C] text-white text-[26px] grid place-items-center px-4">
               <BsSearch />
             </div>
           </div>
+
           <div className="flex gap-4 md:gap-8 items-center">
+
+
+          <Link
+              to="/products"
+              className="text-xl font-bold"
+              data-test="main-products"
+            >
+              men
+            </Link>
+            <Link
+              to="/products"
+              className="text-xl font-bold"
+              data-test="main-products"
+            >
+              women
+            </Link>
+
+            <Link
+              to="/products"
+              className="text-xl font-bold"
+              data-test="main-products"
+            >
+              mobilecover
+            </Link>
+
+
+
+
+
+
+
+
+
+
+
             <Link
               to="/products"
               className="text-xl font-bold"
@@ -51,33 +87,39 @@ const Navbar: FC = () => {
             >
               Products
             </Link>
+            
             <div className="flex items-center gap-2">
-              {username !== "" ? (
-                <img
-                  src="https://robohash.org/Terry.png?set=set4"
-                  alt="avatar"
-                  className="w-6"
-                />
-              ) : (
-                <FaUser className="text-gray-500 text-2xl" />
-              )}
-              <div className="text-gray-500 text-2xl">
                 {username !== "" ? (
-                  <CustomPopup />
+                  <img
+                    src="./public/Asset.png"
+                    alt="avatar"
+                    className="w-6"
+                  />
                 ) : (
-                  <div className="login-button">
-                     <span
-                    className="cursor-pointer hover:opacity-85"
-                    onClick={() => dispatch(updateModal(true))}
-                    data-test="login-btn"
-                  >
-                    Login
-                  </span>
-                  </div>
-                 
+                  <FaUser className="text-gray-500 text-2xl" />
                 )}
+                <div className="text-gray-500 text-2xl">
+                  {username !== "" ? (
+                    <CustomPopup />
+                  ) : (
+                    <div className="login-button">
+                      <span
+                        className="cursor-pointer hover:opacity-85"
+                        onClick={() => dispatch(updateModal(true))}
+                        data-test="login-btn"
+                      >
+                        <Link
+                          
+                          className=" text-2xl font-bold m-4 "
+                          data-test="main-products">
+                          login
+                      </Link>
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
+
             <div
               className="text-gray-500 text-[32px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}

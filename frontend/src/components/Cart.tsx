@@ -36,13 +36,7 @@ const Cart: FC = () => {
           <div className="max-w-[400px] w-full min-h-full bg-white absolute right-0 top-0 p-6 font-karla">
             <h1 className="font-bold text-xl mb-1">Checkout</h1>
             <p className="leading-4 mb-3">
-              Welcome to the checkout section. This is being a development
-              project, I haven't implemented any payment related task. If you
-              click the cancel button you'll go back to the cart segment.
-              Clicking confirm button will consider your order confirmed,
-              payment done & also order delivered successfully. Another thing to
-              mention, order history hasn't been developed due to not having a
-              proper backend api.
+              we are working on it
             </p>
             <div className="flex items-center space-x-2">
               <span

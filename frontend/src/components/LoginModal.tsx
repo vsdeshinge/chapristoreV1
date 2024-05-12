@@ -37,10 +37,7 @@ const LoginModal: FC = () => {
                 <GiArchiveRegister />
               </div>
               <p className="leading-4">
-                This is a hobby project for development purpose only. No well
-                suited backend has been used here. Please use <b>atuny0</b> as
-                username & <b>9uQFF1Lh</b> as password. You can find these
-                credentials in the placeholder also.{" "}
+                {" "}
                 <span
                   className="text-blue-500 cursor-pointer hover:underline"
                   onClick={() => setClicked(false)}
@@ -74,7 +71,7 @@ const LoginModal: FC = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
-                    placeholder="Your password here... (9uQFF1Lh)"
+                    placeholder="Your password here... "
                     className="border w-full border-black py-2 px-8 rounded"
                   />
                   <RiLockPasswordFill className="absolute top-3 left-2 text-lg" />
@@ -83,7 +80,7 @@ const LoginModal: FC = () => {
                   data-test="input-submit"
                   type="submit"
                   value="Submit"
-                  className="bg-blue-500 text-white rounded p-2 hover:bg-blue-700 cursor-pointer"
+                  className="bg-[#C5F42C] text-black rounded p-2 hover:bg-blue-700 cursor-pointer"
                 />
               </form>
               <p className="text-center mt-1">
