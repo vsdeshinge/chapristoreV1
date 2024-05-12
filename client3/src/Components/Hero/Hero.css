@@ -36,7 +36,7 @@
     margin-top: 70px;  
     margin-left: 75px;
     display: flex;
-  
+    position: absolute;
 }
 
 .hero-left h4{
@@ -61,23 +61,31 @@
     display: flex;
     margin-top: -18px;
     margin-left: 200px;
-   
-    opacity: 1;
+    position: absolute;
+    z-index: 1;
 }
 
 
 /* Adjust positioning for overlapping */
 .hero-left p {
+    margin-top: 160px;
     top: 0;
     left: 3;
 }
 
 .hero-left h4 {
-    top: 175px; /* Adjust top position to overlap with "LE" */
+    top: 248px; /* Adjust top position to overlap with "LE" */
     left: 340px; /* Adjust left position to overlap with "LE" */
 }
+.hero-left h5 {
+    top: 222px; /* Adjust top position to overlap with "LE" */
+    left: 150px; /* Adjust left position to overlap with "LE" */
+}
 
-
+.hero-left h6 {
+    top: 360px; /* Adjust top position to overlap with "LE" */
+    left: 150px; /* Adjust left position to overlap with "LE" */
+}
 
 
 /* image commented */
@@ -95,7 +103,7 @@
 
 /*Button for latest collection*/
 
-/* .hero-lastest-button{
+.hero-lastest-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,17 +111,14 @@
     width: 310px;
     height: 70px;
     border-radius: 75px;
-    margin-top: 50px;
-    background: #ff4141;
-    color: white;
+    margin-top: 170px;
+    background: #C5F42C;
+    color: rgb(6, 6, 6);
     font-size: 22px;
     font-weight: 500;
-} */
+} 
 
-
-
-
-.hero-right{
+ .hero-right{
     flex: 1;
     display: flex;
     align-items: center;

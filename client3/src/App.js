@@ -10,7 +10,6 @@ import LoginP from './Pages/LoginP';
 import mens_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import kids_banner from './Components/Assets/banner_kids.png'
-import LoginSignup from './Components/Login/LoginSignup';
 
 
 function App() {
@@ -28,7 +27,7 @@ function App() {
           <Route path=':productId' element={<Product/>}/>
        </Route>
        <Route path='/cart' element={<cart/>}/>
-       <Route path='/login' element={<LoginSignup/>}/>
+       <Route path='/login' element={<LoginP/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

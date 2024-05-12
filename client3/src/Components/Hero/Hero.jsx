@@ -25,8 +25,10 @@ const Hero = () => {
 
 
         <div className="hero-lastest-button">
-            <div>Lightweight</div>
-            <div>Hawai t-shirt</div>
+            
+            {/* <div>Hawai t-shirt</div> */}
+            
+            <div>Latest Collection</div>
             <img src={arrow_icon} alt="Arrow imag" />
         </div>
 

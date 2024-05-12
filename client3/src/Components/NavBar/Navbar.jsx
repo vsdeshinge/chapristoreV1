@@ -8,7 +8,7 @@ const Navbar = () => {
   
     const [menu,setMenu] = useState("shop");
 
-  return (
+  return (  
     
     <div className='navbar'>
     <div className='nav-logo'>

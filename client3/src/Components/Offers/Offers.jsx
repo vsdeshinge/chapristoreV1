@@ -20,4 +20,4 @@ const Offers = () => {
 
 export default Offers
 
-//TRENSINF
+//TRENSING
