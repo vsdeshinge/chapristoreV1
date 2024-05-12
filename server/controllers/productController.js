@@ -15,7 +15,7 @@ exports.getAllProducts = catchAsync(async (req, res, next) =>{
             .limitFields()
             .paginate();
 
-        const products = await features.query;
+        const product = await features.query;
         if (product.length === 0) {
             return next(new AppError(`No Product find`, 404));
 
@@ -26,7 +26,7 @@ exports.getAllProducts = catchAsync(async (req, res, next) =>{
         status: 'success',
         requestedAt: req.requestTime,
         data:{
-            products
+            product
         }
     })
 
@@ -79,7 +79,7 @@ exports.createProduct= catchAsync(async(req, res, next)=>{
         res.status(201).json({
             status: 'success',
             data:{
-                product: newProduct
+                product: product
             }
         });
     

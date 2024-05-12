@@ -14,19 +14,19 @@ const LoginSignup = () => {
                 <img src={logo} alt="loding" />
             </div>
 
-			<form method="post">
+			<form method="get">
 				{/* Email/Phone input */}
 				<div className="txt_field">
 					<input type="text" required />
 					<span></span>
-					<label>Email or Phone number</label>
+					<label>name</label>
 				</div>
 
 				{/* Password input */}
 				<div className="txt_field">
 					<input type="password" required />
 					<span></span>
-					<label>Password</label>
+					<label>password</label>
 				</div>
 
 				{/* Forgot Password link */}

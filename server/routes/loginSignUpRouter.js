@@ -7,7 +7,7 @@ const router = express.Router();
 
 router
     .route('/login')
-    .post(loginSignUpController.getlogin);
+    .get(loginSignUpController.getlogin);
 
 
 router

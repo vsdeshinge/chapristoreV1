@@ -16,6 +16,11 @@ const loginSignUpRouter = require("./routes/loginSignUpRouter")
 const app = express();
 app.use(express.json());
 app.use(express.static('public'));
+
+if(process.env.NODE_ENV == 'DEVELOPMENT'){
+    app.use(morgan('dev'));
+}
+
 app.use(cors());
 
 
